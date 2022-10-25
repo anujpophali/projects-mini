@@ -1,2 +1,2 @@
-# js-mini
+# projects-mini
  
