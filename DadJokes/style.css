@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 800px;
+  padding: 50px 20px;
+  box-shadow: 0 10px 20px 10px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  border: yellow 2px solid;
+  border-radius: 10px;
+  background-color: white;
+  text-align: center;
+}
+
+body {
+  background-color: rgb(144, 181, 89);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 100vh;
+}
+
+h3 {
+  color: grey;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+.quotes {
+  line-height: 40px;
+  margin: 50px auto;
+  max-width: 600px;
+  font-size: 20px;
+  color: gray;
+  font-weight: 200;
+}
+
+.btn {
+  background-color: yellow;
+  color: white;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+  padding: 15px 30px;
+  outline: none;
+  font-weight: 600;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.btn:hover {
+  color: yellow;
+  background-color: white;
+}
