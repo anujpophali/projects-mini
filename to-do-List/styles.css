@@ -1,0 +1,17 @@
+body {
+  background-image: url("back.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  font-family: "Fira Code";
+}
+
+.title,
+.description,
+.delete {
+  color: #fff;
+}
+
+hr {
+  border-top: 1px solid white;
+}

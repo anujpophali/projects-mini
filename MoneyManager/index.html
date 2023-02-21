@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Manager</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;1,200&family=Rancho&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <style type="text/tailwindcss">
+        header h1 {
+  	  font-family: Rancho, cursive;
+    }
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100 font-sans scroll-smooth">
+    <!-- Header -->
+    <header class="bg-green-500 border-b-4 border-green-500">
+        <h1 class="text-4xl font-semibold p-4 text-white text-center">
+            Money Manager
+        </h1>
+    </header>
+    <!-- Container -->
+    <div class="container mx-auto">
+        <div class="mt-10">
+            <label for="money" class="text-2xl block text-center pb-5">
+                Enter the amount that you want to manage:
+            </label>
+            <input type="text" id="money" class="shadow appearence-none border border-gray-500 rounded px-3 py-2 block mx-auto">
+            <p class="text-red-500 text-sm italic text-center mt-5 hidden" id="error">Please Enter the valid amount.</p>
+        </div>
+        <!-- Manage Section -->
+        <div class="mt-10 hidden" id="manage">
+            <p class="text-xl block text-center font-semibold">How would you like to divide money?</p>
+            <div class="flex mt-8">
+                <div class="flex-grow">
+                    <label for="necessity" class="ml-5">
+                        Necessity (%)
+                    </label>
+                    <input type="text" id="necessity" class="shadow appearence-none border border-gray-500 rounded px-2 py-1">
+                </div>
+                <div class="flex-grow">
+                    <label for="accessories">
+                        Accessories (%)
+                    </label>
+                    <input type="text" id="accessories" class="shadow appearence-none border border-gray-500 rounded px-2 py-1">
+                </div>
+                <div class="flex-grow">
+                    <label for="emergency">
+                        Emergency (%)
+                    </label>
+                    <input type="text" id="emergency" class="shadow appearence-none border border-gray-500 rounded px-2 py-1">
+                </div>
+                <div class="flex-grow">
+                    <label for="savings">
+                        Savings (%)
+                    </label>
+                    <input type="text" id="savings" class="shadow appearence-none border border-gray-500 rounded px-2 py-1">
+                </div>
+            </div>
+        </div>
+        <p class="text-red-500 text-sm italic text-center mt-5" id="error_manage"></p>
+        <button class="bg-green-500 hover:bg-green-400 text-white font-bold py-2 px-4 mt-10 block mx-auto border-b-4 border-green-700 hover:border-color-500 rounded" id="evaluate">Evaluate my Money
+        </button>
+    </div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif" class="block mx-auto hidden" id="loader">
+    <!-- Show Result -->
+    <div class="mt-10 hidden" id="result">
+        <p class="text-2xl text-center block font-semibold"> Here's how should you manage your money</p>
+        <div class="flex mt-8">
+            <div class="flex-grow bg-green-600 shadow-lg px-6 py-4 mx-5 rounded">
+                <h1 class="font-bold text-white text-xl">Neccessities</h1>
+                <p class="font-semibold text-white text-2xl" id="show-necessity"></p>
+            </div>
+            <div class="flex-grow bg-blue-600 shadow-lg px-6 py-4 mx-5 rounded">
+                <h1 class="font-bold text-white text-xl">Accessories</h1>
+                <p class="font-semibold text-white text-2xl" id="show-accessories"></p>
+            </div>
+            <div class="flex-grow bg-purple-600 shadow-lg px-6 py-4 mx-5 rounded">
+                <h1 class="font-bold text-white text-xl">Emergency</h1>
+                <p class="font-semibold text-white text-2xl" id="show-emergency"></p>
+            </div>
+            <div class="flex-grow bg-yellow-600 shadow-lg px-6 py-4 mx-5 rounded">
+                <h1 class="font-bold text-white text-xl">Savings</h1>
+                <p class="font-semibold text-white text-2xl" id="show-savings"></p>
+            </div>
+        </div>
+        <button class="bg-teal-500 hover:bg-teal-400 text-white font-bold py-2 px-4 mt-10 block mx-auto border-b-4 border-teal-700 hover:border-color-500 rounded" id="reset">Reset</button>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
