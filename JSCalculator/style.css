@@ -1,0 +1,73 @@
+#app {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  background: rgb(109, 178, 239);
+  font-family: "Fira Code", sans-serif;
+}
+
+.calculator {
+  border: 2px solid #47476b;
+  padding: 5px;
+  background: #fff;
+  width: 320px;
+  position: relative;
+  border-radius: 5px;
+}
+
+#formula {
+  min-height: 25px;
+  font-family: "Fira Code", sans-serif;
+  font-size: 20px;
+  color: rgb(29, 122, 159);
+  font-weight: bolder;
+}
+
+#output {
+  font-size: 30px;
+  min-height: 30px;
+  font-family: "Fira Code", sans-serif;
+  color: rgb(29, 122, 159);
+  text-align: right;
+  font-weight: bolder;
+}
+
+button {
+  position: relative;
+  height: 65px;
+  width: 80px;
+  color: white;
+  outline: 1px solid #fff;
+  border: none;
+  background: #4d4d4d;
+  font-family: "Fira Code", sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  color: black;
+  outline: 0.05em solid grey;
+  z-index: 2;
+}
+
+.jumbo {
+  width: 160px;
+}
+
+.author {
+  text-align: center;
+  font-family: "Fira Code", sans-serif;
+  margin-top: 15px;
+}
+
+.author a {
+  text-decoration: none;
+  color: #00264d;
+  line-height: 26px;
+  font-family: "Fira Code", sans-serif;
+}

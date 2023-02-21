@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Javascript Calculator</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="calculator">
+        <div class="formulaScreen" id="formula"></div>
+        <div class="outputScreen" id="output">0</div>
+        <div>
+          <button
+            class="jumbo"
+            id="clear"
+            value="AC"
+            style="background: rgb(183, 183, 229)"
+          >
+            AC</button
+          ><button
+            id="divide"
+            value="/"
+            style="background: rgb(119, 119, 167)"
+            onclick="dis('/')"
+          >
+            /</button
+          ><button
+            id="multiply"
+            value="x"
+            style="background: rgb(119, 119, 167)"
+            onclick="dis('*')"
+          >
+            x</button
+          ><button
+            id="seven"
+            value="7"
+            style="background: rgb(198, 198, 228)"
+            onclick="dis('7')"
+          >
+            7</button
+          ><button
+            id="eight"
+            value="8"
+            style="background: rgb(198, 198, 228)"
+            onclick="dis('8')"
+          >
+            8</button
+          ><button
+            id="nine"
+            value="9"
+            style="background: rgb(198, 198, 228)"
+            onclick="dis('9')"
+          >
+            9</button
+          ><button
+            id="subtract"
+            value="‑"
+            style="background: rgb(119, 119, 167)"
+            onclick="dis('-')"
+          >
+            ‑</button
+          ><button
+            id="four"
+            value="4"
+            style="background: rgb(198, 198, 228)"
+            onclick="dis('4')"
+          >
+            4</button
+          ><button
+            id="five"
+            value="5"
+            style="background: rgb(198, 198, 228)"
+            onclick="dis('5')"
+          >
+            5</button
+          ><button
+            id="six"
+            value="6"
+            style="background: rgb(198, 198, 228)"
+            onclick="dis('6')"
+          >
+            6</button
+          ><button
+            id="add"
+            value="+"
+            style="background: rgb(119, 119, 167)"
+            onclick="dis('+')"
+          >
+            +</button
+          ><button
+            id="one"
+            value="1"
+            style="background: rgb(198, 198, 228)"
+            onclick="dis('1')"
+          >
+            1</button
+          ><button
+            id="two"
+            value="2"
+            style="background: rgb(198, 198, 228)"
+            onclick="dis('2')"
+          >
+            2</button
+          ><button
+            id="three"
+            value="3"
+            style="background: rgb(198, 198, 228)"
+            onclick="dis('3')"
+          >
+            3</button
+          ><button
+            class="jumbo"
+            id="zero"
+            value="0"
+            style="background: rgb(119, 119, 167)"
+            onclick="dis('0')"
+          >
+            0</button
+          ><button
+            id="decimal"
+            value="."
+            style="background: rgb(119, 119, 167)"
+            onclick="dis('.')"
+          >
+            .</button
+          ><button
+            id="equals"
+            value="="
+            style="
+              background: rgb(2, 88, 132);
+              position: absolute;
+              height: 130px;
+              bottom: 5px;
+            "
+            onclick="output.textContent=eval(formula.textContent)"
+          >
+            =
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="author">
+      Designed and Coded By<br /><a
+        href="https://www.github.com/anujpophali"
+        class="href"
+        >Anuj Pophali</a
+      >
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

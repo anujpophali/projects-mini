@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cascadia Code", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: aliceblue;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.container {
+  width: 800px;
+  height: 500px;
+  padding: 40px 20px;
+  box-shadow: 0 10px 20px 10px rgb(0, 0, 0, 0.1);
+  max-width: 40%;
+  max-height: 70%;
+  background-color: #fff;
+  border-radius: 1rem;
+}
+
+.degrees {
+  color: #808080;
+  text-align: center;
+}
+
+.from {
+  color: #808080;
+  text-align: center;
+}
+
+.to {
+  color: #808080;
+  text-align: center;
+}
+
+.result {
+  color: #808080;
+  text-align: center;
+}
+
+.heading {
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.convert {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: 1rem;
+  color: #fff;
+  width: 30%;
+  background-color: #007bff;
+  border: #007bff solid;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.convert:hover {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.convert:focus {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+
+.result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  border: #808080 solid;
+  width: 20%;
+  color: #000;
+  height: 10%;
+  left: 40%;
+  right: 40%;
+  border-radius: 1rem;
+}
